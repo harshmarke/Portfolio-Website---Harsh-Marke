@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar {
+    position: absolute;
+    background-color: lightpink ; 
+    /*color: black;*/
+    /*width: 275px;*/
+    height: 110vh;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
+    margin-right: 0px; 
+    transition: transform 0.3s ease-in;
+}
+
+.sidebar nav{
+    padding: 30px;
+    margin-right: 0px;
+}
+.sidebar nav ul li{
+    list-style: none;
+    font-size: 1.5em;
+    padding: 35px 30px;
+    
+}
+.sidebar nav li a{
+    text-decoration: none;
+    color: black;
+}
+.container{
+    display: flex;
+    height: 80vh;
+    flex-direction: column;
+    padding-bottom: 0;
+}
+.main {  
+    width: auto;
+    margin: 0;   
+}
+.heading{
+    font-family: Arial, Helvetica, sans-serif;
+    /*text-align: center;*/
+    margin-left: 15px;
+}
+.contain{
+    padding-top: 25px;
+    padding-left: 260px;
+    font-family: cursive;
+    background-color: rgba(124, 183, 219, 0.306);
+    background-color: none;
+    height: 100vh;
+}
+.form-content{
+    font-size: 20px;
+
+}
+.instruction{
+    padding: 15px 10px;
+}
+.form-name1, .form-name2{
+    display: flex;
+    padding: 10px 10px;
+    flex-direction: column;
+}
+.mail, .phonenumber, .query{
+    display: flex;
+    padding: 10px 10px;
+    flex-direction: column;
+}
+
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+textarea{
+    width: 60%;
+    padding-top: 20px;
+    padding: 10px;
+    border:1px solid rgba(0, 0, 0, 0.555);
+    border-radius: 4px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: lighter;
+    font-size: 16px;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    background-color: rgba(83, 83, 123, 0.594);
+    padding: 10px 15px;
+    border: 2px solid rgba(83, 83, 123, 0.806);
+    border-radius: 25px;
+    cursor: pointer;
+    width: 130px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 1.3em;
+}
+#submit{
+    margin: 13px;
+}
+#reset{
+    margin: 50px;
+}
+
+
+input[type="submit"]:hover,
+input[type="reset"]:hover{
+    background-color: rgba(223, 18, 18, 0.495);
+    border: none;
+}
+
+.hamburger{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    cursor: pointer;
+    top: 10px;
+    left: 10px;
+}
+
+.cross{
+    margin-left: 178px;
+    margin-top: 5px;
+}
+.ham{
+    margin-top: 5px;
+    margin-left: 5px;
+}
+       
+    
+.sidebarGo{
+    transform: translate(-443px, 0px);
+    position: absolute;
+}
+
+@media (max-width:1500px){
+    .contain{
+        padding-top: 50px;
+        padding-left: 10px;
+    }
+}

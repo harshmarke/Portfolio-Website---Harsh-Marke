@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+/*font-family: 'Abel', sans-serif;*/
+*{
+    margin: 0;
+    padding: 0;
+}
+.sidebar {
+    position: absolute;
+    background-color: lightpink ; 
+    /*color: black;*/
+    /*width: 275px;*/
+    height: 110vh;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
+    margin-right: 0px; 
+    transition: transform 0.3s ease-in;
+}
+
+.sidebar nav{
+    padding: 30px;
+    margin-right: 0px;
+}
+.sidebar nav ul li{
+    list-style: none;
+    font-size: 1.5em;
+    padding: 35px 30px;
+    
+}
+.sidebar nav li a{
+    text-decoration: none;
+    color: black;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.main {
+    width:70%;
+    margin: 0px;
+    padding: 0 20px;
+}
+.main .about h2{
+    padding: 20px 10px;    
+}
+body{
+    background-color:rgba(29, 70, 112, 0.386);
+}
+.main .about{
+    margin: 20px 120px;  
+}
+.skillitem{
+    display: flex;
+    align-items: center;
+    font-family: 'Abel', sans-serif;
+    font-size: 15px;
+}
+.skill{
+    width: 285px;
+    height: 10px;
+    background-color: red;
+    border: 2px solid black;
+}
+.hundred{
+    width: 280px;
+}
+.fifty{
+    width: 140px;
+    background-color: rgb(222, 215, 14);
+}
+.t5{
+    width: 70px;
+}
+.ten{
+    width: 50px;
+    background-color: rgb(85, 255, 0);
+}
+.hamburger{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    cursor: pointer;
+    top: 10px;
+    left: 10px;
+}
+
+.cross{
+    margin-left: 178px;
+    margin-top: 5px;
+}
+.ham{
+    margin-top: 5px;
+    margin-left: 5px;
+}
+       
+    
+.sidebarGo{
+    transform: translate(-443px, 0px);
+    position: absolute;
+}
+@media (max-width: 1640px){
+    .about{
+        margin: 18px 8px;
+    }
+}
+
+.clip-circle{
+    clip-path: circle(53.6% at 50% 50%);
+}
+.main .image{
+    margin: 10px 55px;
+    padding: 0 60px;
+    display: flex;
+    flex-direction: column;
+}
+.main .image .social-media{
+    padding: 10px 10px;
+}
+.main .image .social-media .link{
+    text-decoration: none;
+    background-color: blue;
+    color: aliceblue;
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 50px;
+    height: 20px;
+}
+.main .image .social-media .link:hover{
+    background-color: whitesmoke;
+    border: none;
+    color: black;
+}

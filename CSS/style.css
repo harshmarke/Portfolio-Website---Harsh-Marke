@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar {
+    position: absolute;
+    background-color: lightpink ; 
+    /*color: black;*/
+    /*width: 275px;*/
+    height: 100vh;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
+    margin-right: 0px; 
+    transition: transform 0.3s ease-in; 
+}
+
+.sidebar nav{
+    padding: 30px;
+    margin-right: 0px;
+}
+.sidebar nav ul li{
+    list-style: none;
+    font-size: 1.5em;
+    padding: 35px 30px;
+}
+.sidebar nav li a{
+    text-decoration: none;
+    color: black;
+}
+.main {
+    /*background-color: rgba(127, 255, 212, 0.541);*/
+    width:0px;
+    padding: 0px;
+}
+.container{
+    display: flex;
+    
+}
+.info-container{
+    display: flex;
+    /*background-color: indianred;*/
+    height: 60vh;
+    width: 75vw;
+    padding-left: 40px;
+    margin-top: 120px;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.devinfo{
+    padding-left: 20px;
+    justify-content: center;
+    margin-top: 90px;
+    width: 800px;
+    font-size: 15px;
+    color: red;
+}
+.hello{
+    font-size: 3em;
+    font-family: unset;
+    font: lighter;
+}
+.name{
+    font-size: 4em;
+    font-family: sans-serif;
+    font: bold;
+    font-weight: bold;
+}
+.bio{
+    font-size: 1.5em;
+    color: yellow;
+}
+.devimage img{
+    height: 54vh;
+    padding-left: 0px;
+    border: 3px solid limegreen;
+
+}
+@media (max-width: 1535px){
+    *{
+        /*background-color: blue;*/
+    }
+    
+    /*.sidebar{
+        transform: translate(-443px, 0px);
+        position: absolute;
+    }*/
+}
+@media (max-width:1450px) {
+    .devimage{
+        display: none;
+    } 
+    .devinfo{
+        font-size: 10px;
+    }   
+    .info-container{
+        margin-left: 5px;
+    }
+}
+
+.hamburger{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    cursor: pointer;
+    top: 10px;
+    left: 10px;
+}
+
+.cross{
+    margin-left: 178px;
+    margin-top: 5px;
+}
+.ham{
+    margin-top: 5px;
+    margin-left: 5px;
+}
+       
+    
+.sidebarGo{
+    transform: translate(-443px, 0px);
+    position: absolute;
+}
+.main h2{
+    text-align: center;
+    margin: 71px 900px;
+    padding-left: 90px;
+    color:rgb(231, 21, 199);
+    font-size: 2.3em;
+}
+
+/*.clip-circle{
+    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%); 
+} */
