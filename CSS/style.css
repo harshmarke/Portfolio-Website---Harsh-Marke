@@ -35,7 +35,7 @@
 .container{
     display: flex;
     background-color: black;  
-    height:110vh;
+    height:100vh;
 }
 .info-container{
     display: flex;
